@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Non-Blocking example</title>
+    <style>
+        #buttons {
+            margin: 30px 0px 30px 10px;
+        }
+
+        #buttons>button {
+            height: 50px;
+            width: 100px;
+        }
+
+        img {
+            height: 200px;            
+        }
+    </style>
+
+    <script type="text/javascript">
+        function washClothes() {
+            document.getElementById("washClothes").style.display = "inline";
+            setTimeout(() => document.getElementById("washDone").style.display = "block", 3000)            
+        }
+
+        function cleanDishes() {
+            document.getElementById("cleanDishes").style.display = "inline";
+            setTimeout(() => document.getElementById("dishesDone").style.display = "block", 4000)            
+        }
+
+        function cleanHome() {
+            document.getElementById("cleanHome").style.display = "inline";
+            setTimeout(() => document.getElementById("homeDone").style.display = "block", 5000)
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Non-Blocking Example</h1>
+    <div id='buttons'>
+        <button onclick="washClothes()">Wash Clothes</button>
+        <button onclick="cleanDishes()">Clean Dishes</button>
+        <button onclick="cleanHome()">Clean Home</button>
+    </div>
+    <div>
+        <div id="washClothes" style="display: none;">
+            <img src="washClothes.gif" alt="wash clothes">
+            <div>washing clothes</div>
+            <div id="washDone" style="display: none;">washing clothes - DONE</div>            
+        </div>
+        <div id="cleanDishes" style="display: none; padding-bottom: 200px;">
+            <img src="cleanDishes.gif" alt="clean dishes" />
+            <div>cleaning dishes</div>
+            <div id="dishesDone" style="display: none;">cleaning dishes - DONE</div>   
+        </div>
+        <div id="cleanHome" style="display: none; padding-bottom: 200px;">
+            <img src="cleanHome.gif" alt="clean home" />
+            <div>cleaning home</div>
+            <div id="homeDone" style="display: none;">home cleaning - DONE</div>
+        </div>
+    </div>    
+</body>
