@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Blocking example</title>
+    <style>
+        #buttons {
+            margin: 30px 0px 30px 10px;
+        }
+
+        #buttons>button {
+            height: 50px;
+        }
+
+        img {
+            height: 200px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function washClothes(start) {            
+            document.getElementById("washClothes").style.display = "inline";
+            while (new Date().getTime() < start + 3000);
+            document.getElementById("washDone").style.display = "block"           
+        }
+
+        function cleanDishes(start) {
+            document.getElementById("cleanDishes").style.display = "inline";
+            while (new Date().getTime() < start + 4000);
+            document.getElementById("dishesDone").style.display = "block"
+        }
+
+        function cleanHome(start) {           
+            document.getElementById("cleanHome").style.display = "inline";
+            while (new Date().getTime() < start + 5000);
+            document.getElementById("homeDone").style.display = "block"
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Blocking Example</h1>
+    <div id='buttons'>
+        <button onclick="washClothes(new Date().getTime())">Wash Clothes</button>
+        <button onclick="cleanDishes(new Date().getTime())">Clean Dishes</button>
+        <button onclick="cleanHome(new Date().getTime())">Clean Home</button>
+    </div>
+    <div>
+        <div id="washClothes" style="display: none;">
+            <img src="washClothes.gif" alt="wash clothes">
+            <div>washing clothes</div>
+            <div id="washDone" style="display: none;">washing clothes - DONE</div>
+        </div>
+
+        <div id="cleanDishes" style="display: none;">
+            <img src="cleanDishes.gif" alt="clean dishes" />
+            <div>cleaning dishes</div>
+            <div id="dishesDone" style="display: none;">cleaning dishes - DONE</div>
+        </div>
+
+        <div id="cleanHome" style="display: none;">
+            <img src="cleanHome.gif" alt="clean home" />
+            <div>cleaning home</div>
+            <div id="homeDone" style="display: none;">home cleaning - DONE</div>
+        </div>
+    </div>
+</body>
