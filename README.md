@@ -12,7 +12,7 @@ This course takes [Google Chrome](https://www.google.com/chrome/) as browser of 
 ## How to run the code
 - Clone the repository  
 ```sh
-git clone TODO: Add Github Link  
+git clone git@github.com:bonsaiilabs/browser-javascript-and-event-loop.git   
 ```
 
 - Get inside the project root  
@@ -33,8 +33,7 @@ cd browser-javascript-event-loop
 - [ECMAScript is a scripting-language specification to standardize JavaScript](https://en.wikipedia.org/wiki/ECMAScript)  
 - `setTimeout` is a method on [Window](https://developer.mozilla.org/en-US/docs/Web/API/Window) which is an interface available on [DOM API](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)  
 - Relationship between [Chrome and Chromium](https://chromium.googlesource.com/chromium/src/+/master/docs/chromium_browser_vs_google_chrome.md)  
-- [CPU vs GPU](https://blogs.nvidia.com/blog/2009/12/16/whats-the-difference-between-a-cpu-and-a-gpu/)  
-- [Introduction to Operating Systems](https://www.scs.stanford.edu/17wi-cs140/notes/intro.pdf)  
+
 
 ### About Chrome JavaScript Engine - [V8](https://v8.dev/docs)  
 1. [V8](https://source.chromium.org/chromium/chromium/src/+/master:v8/) is Google's open source JavaScript engine.
