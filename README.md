@@ -108,3 +108,6 @@ cd browser-javascript-event-loop
     
 ### References from `fetch` specification  
 1. `fetch` queues a Task. See *step 18* of [Main fetch](https://fetch.spec.whatwg.org/#main-fetch)  
+
+### License Attribution
+Please do not use the gif files for commercial purposes.
